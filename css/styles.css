@@ -557,7 +557,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
   /* flex-shrink: 0; */
@@ -576,7 +576,7 @@ img {
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   fill: #2e2f42;
   border-radius: 50%;
@@ -584,13 +584,15 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
 .close-btn:focus {
   fill: #ffffff;
   background-color: #404bbf;
+  border: none;
 }
 
 .close-btn-icon {
@@ -686,7 +688,7 @@ img {
   outline: transparent;
 }
 
-.review-form:last-child {
+.review-form-last-field-wrapper {
   margin-bottom: 16px;
 }
 .review-form-checkbox-wrapper {
@@ -758,14 +760,13 @@ img {
   height: 56px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-submit:hover,
 .review-form-submit:focus,
 .review-form-submit:active {
-  background: #404bbf;
-  border: none;
+  background-color: #404bbf;
 }

@@ -595,7 +595,7 @@
         <div class="footer-item-three">
           <p class="subscribe-description">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-form-field" for="">
+            <label class="subscribe-form-field">
               <input
                 class="subscribe-form-field-input"
                 type="email"
@@ -620,10 +620,10 @@
       </div>
     </footer>
     <!-- BACKDROP WITH MODAL WINDOW -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <!-- is-open -->
       <div class="modal">
-        <button class="close-btn">
+        <button class="close-btn" type="button">
           <svg
             class="close-btn-icon"
             width="8"
@@ -633,7 +633,6 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <p class="review-form-description">
           Leave your contacts and we will call you back
         </p>
@@ -706,7 +705,7 @@
               </svg>
             </div>
           </div>
-          <div class="review-form-field-wrapper">
+          <div class="review-form-field-wrapper review-form-last-field-wrapper">
             <label class="review-form-field-label" for="user-comment"
               >Comment</label
             >
