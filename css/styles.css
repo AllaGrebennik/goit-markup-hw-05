@@ -603,6 +603,10 @@ img {
 
 /* ---MODAL FORM--- */
 
+.review-form {
+  margin: 0 auto;
+}
+
 .review-form-description {
   color: #2e2f42;
   text-align: center;
@@ -692,7 +696,7 @@ img {
   margin-bottom: 16px;
 }
 .review-form-checkbox-wrapper {
-  display: flex;
+  /* display: flex; */
   /* margin-top: 16px; */
   margin-bottom: 24px;
 }
